@@ -5,12 +5,11 @@ html {
 }
 
 .container {
-	text-align: center;
 	height: 100%;
 	box-sizing: border-box;
 	display: grid;
 	grid-template-columns: 1fr 5fr;
-	grid-template-rows: 1fr 5fr;
+	grid-template-rows: 2fr 6fr;
 }
 
 .container .header,
@@ -23,10 +22,103 @@ html {
 }
 
 .header {
+	display: grid;
+	grid-column: 2/3;
 	background-color: #FFFFFF;
 	color: #000000;
-	grid-column: 2/3;
 }
+
+.top-header {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	padding: 0 2rem;
+	gap: 3rem;
+}
+
+.bottom-header {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	padding: 0 2rem;
+}
+
+.search-container {
+	display: grid;
+	grid-template-columns: 30px 3fr;
+	justify-items: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.logo-profile-name {
+	display: grid;
+	grid-template-columns: 60px 100px minmax(200px, 300px);
+	justify-items: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.notification {
+	width: 30px;
+	height: auto;
+}
+
+.profile-logo {
+	width: 50px;
+	height: auto;
+	border-radius: 5rem;
+}
+
+.logo-profile-name p {
+	margin: 0;
+}
+
+.search-icon {
+	justify-self: end;
+	width: 30px;
+	height: auto;
+}
+
+.search-container form {
+	justify-self: start;
+}
+
+.search-container form input {
+	font-size: 16px;
+	height: 2.3rem;
+	min-width: 700px;
+	border-radius: 10px;
+	border: none;
+	background-color: #E2E8F0;
+}
+
+.user-container {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	align-items: center;
+	gap: 1rem;
+}
+
+.greetings p,
+.greetings h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.greetings p {
+	font-size: 1rem;
+}
+
+.greetings h3 {
+	font-size: 2rem;
+}
+
+
+.profile-pic {
+	width: 95px;
+	height: auto;
+	border-radius: 5rem;
+}
+
 
 .sidebar {
 	display: grid;
@@ -105,4 +197,8 @@ html {
 .nav-links p {
 	font-size: 1.5rem;
 	margin: 0;
+}
+
+.search-container form input:focus {
+	outline: none;
 }
