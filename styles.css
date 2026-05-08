@@ -1,9 +1,39 @@
-* {
+body,
+html {
+	height: 100%;
 	margin: 0;
-	padding: 0;
 }
 
-h1 {
-	width: 200px;
-	margin: 0 auto;
+.container {
+	text-align: center;
+	height: 100%;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: 1fr 4fr;
+}
+
+.container div {
+	padding: 15px;
+	font-size: 32px;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+.header {
+	background-color: #FFFFFF;
+	color: #000000;
+	grid-column: 2/3;
+}
+
+.sidebar {
+	background-color: #1992D4;
+	color: #FFFFFF;
+	grid-column: 1;
+	grid-row: 1 / span 2;
+}
+
+.content {
+	background-color: #E2E8F0;
+	color: #000000;
 }
