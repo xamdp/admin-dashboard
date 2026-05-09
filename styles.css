@@ -302,6 +302,7 @@ html {
 	width: 300px;
 	overflow: hidden;
 	display: -webkit-box;
+	line-clamp: 3;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 	color: #636363;
