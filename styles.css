@@ -161,7 +161,7 @@ html {
 
 .sidebar {
 	display: grid;
-	grid-template-rows: 100px 350px 200px;
+	grid-template-rows: 100px 400px 300px;
 	background-color: #1992D4;
 	color: #FFFFFF;
 	grid-column: 1;
@@ -172,6 +172,10 @@ html {
 	display: flex;
 	justify-content: flex-start;
 	gap: 15px;
+}
+
+.logo-name:hover {
+	cursor: pointer;
 }
 
 .dashboard-logo {
@@ -190,20 +194,19 @@ html {
 
 .admin-nav {
 	display: grid;
-	grid-template-columns: 30px 2fr;
-	grid-row: 2;
+	grid-template-columns: 2fr;
+	grid-template-rows: repeat(6, 50px);
+	grid-row: 2/3;
 	padding: 15px;
-	margin-top: 2rem;
 	gap: 1rem;
 }
 
-
 .settings-nav {
 	display: grid;
-	grid-template-columns: 30px 2fr;
-	grid-row: 3;
-	padding: 15px;
+	grid-template-columns: 2fr;
+	grid-template-rows: repeat(3, 50px);
 	margin-top: 2rem;
+	padding: 15px;
 	gap: 1rem;
 }
 
@@ -212,28 +215,23 @@ html {
 	color: #000000;
 }
 
-.icons {
+.nav-icon {
 	display: grid;
-	grid-template-columns: subgrid;
+	grid-template-columns: 30px 2fr;
 	justify-items: start;
+	align-items: center;
+	gap: 1rem;
 }
 
-.icons svg {
+.icon {
 	display: block;
 	width: 30px;
 	height: auto;
-	color: #FFFFFF;
 }
 
-.nav-links {
-	display: grid;
-	grid-template-columns: subgrid;
-	justify-items: start;
-}
-
-.nav-links p {
-	font-size: 1.5rem;
+.nav-icon p {
 	margin: 0;
+	font-size: 1.5rem;
 }
 
 .content {
