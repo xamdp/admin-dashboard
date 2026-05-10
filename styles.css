@@ -221,6 +221,19 @@ html {
 	justify-items: start;
 	align-items: center;
 	gap: 1rem;
+
+	&:hover {
+		cursor: pointer;
+
+		.icon {
+			width: 32px;
+			height: auto;
+		}
+
+		p {
+			font-size: 1.6rem;
+		}
+	}
 }
 
 .icon {
@@ -268,6 +281,11 @@ html {
 	border-left-width: 8px;
 	padding: 2rem 1.5rem 1rem;
 	box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 12px 12px hsl(1deg 0% 0% / 0.3);
+	}
 }
 
 .project h4,
