@@ -51,6 +51,11 @@ html {
 	gap: 1rem;
 }
 
+.search-container form {
+	display: flex;
+	justify-content: center;
+}
+
 .logo-profile-name {
 	display: grid;
 	grid-template-columns: 1fr minmax(200px, 1fr);
@@ -89,11 +94,11 @@ html {
 	justify-self: start;
 }
 
-.search-container form input {
+.searchbar {
 	font-size: 16px;
 	height: 2.3rem;
 	min-width: 700px;
-	border-radius: 10px;
+	border-radius: 2rem;
 	border: none;
 	background-color: #E2E8F0;
 }
@@ -386,6 +391,6 @@ html {
 	font-size: 24px;
 }
 
-.search-container form input:focus {
+.searchbar:focus {
 	outline: none;
 }
